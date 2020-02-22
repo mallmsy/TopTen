@@ -18,6 +18,8 @@ var albumSchema = mongoose.Schema({
 });
 // Export Album model
 var Album = module.exports = mongoose.model('Album', albumSchema);
+
+// Instance variables
 module.exports.get = function (callback, limit) {
     Album.find(callback).limit(limit);
 }
