@@ -20,8 +20,7 @@ exports.index = function (req, res) {
 
 // Handle create album actions
 exports.new = function (req, res) {
-    // console.log("REQUEST....\n///////////////////", req.body, "RESPONSE....\n///////////////////", res)
-    console.log("REQUEST....\n///////////////////", req.body)
+    console.log("REQUEST....\n///////////////////", req.body, "RESPONSE....\n///////////////////", res)
     var album = new Album();
     album.title = req.body.title ? req.body.title : album.title;
     album.artist = req.body.artist;
